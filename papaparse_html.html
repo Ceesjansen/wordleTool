@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <form class="form-inline">
               <div class="form-group">
                 <h3> Step 1: </h3>
@@ -41,8 +41,9 @@
               </div>
             </form>
             <h3> Step 2: </h3> 
-            <h4>Please select your preferred output options by clicking the buttons below: </h4>
-            <div id="selection"></div>
+              <h4>Please select your preferred output options by clicking the buttons below: </h4>
+          </div>
+            <div class="col-md-4" id="selection"></div>
              <h3> Step 3:</h3>
              <h4>Made your selections? Please confirm by clicking the button below</h4>
               <button class="btn btn-info" id="check">Confirm Selection</button>
@@ -62,7 +63,8 @@
                 <a href="#"  class="btn btn-danger" id="downloadbtn"> Download(.csv)</a>
               </div>
             </div>
-            <div class="row">
+          </div>
+          <div class="col-md-4">
               <div class="col-md-12 wordlebtn">
                 <h3>(Optional) Step 6:</h3>
                 <h4>Choose specific wordle options to get the worlde you prefer</h4>
@@ -94,7 +96,6 @@
                     <option value="shootingstar">Shooting Star</option>
                   </select>
                 </div>
-             </div>
             </div>
             <div class="row">
               <div class="col-md-12 wordlebtn">
@@ -107,7 +108,7 @@
                 <input type="text" name="ignored" id="ignored" placeholder="Ignored words (comma seperated)" class="form-control" onchange="makeWordCloud('wordleOutput')" data-toggle="tooltip" title="" data-placement="top" data-original-title="Place your words here that need to be filtered out of the wordle (seperate with comma)">
               </div>
             </div>
-            <div class="row changeword">
+          <div class="col-md-4">
               <div class="col-md-10 wordlebtn changeword">
               <h3>(Optional) Step 7:</h3>
               <h4>Change multiple words to one word </h4>
@@ -117,7 +118,7 @@
               <div class="col-md-2 wordlebtn" id="changebtn">
                 <button class="btn btn-primary" id="changewords">Change words</button>
               </div>
-            </div>
+          </div>
             <div id="output"> 
               </div>
               </div>
